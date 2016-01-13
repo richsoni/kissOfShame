@@ -34,14 +34,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-#signup {
-  margin-top: 1em;
-  width: 100%;
-  text-align: center;
-}
-
-
 .hoverDim a {
   color: #fff;
   transition: all ease-in-out .7s;
@@ -62,7 +54,9 @@ body {
   color: #bebebe !important;
 }
 
+
 #socialNav {
+  margin-top: 1em;
   width: 100%;
   padding: 1em 0;
   text-align: center;
@@ -75,8 +69,9 @@ body {
 }
 
 #signup {
-  width: 100%;
+  width: 65vh;
   text-align: center;
+  margin: auto auto;
   margin-top: 3em;
 }
 
@@ -89,10 +84,17 @@ body {
   color: white;
   outline-color: #FC99A1;
   border: 1px solid black;
+  max-width: 15em;
 }
 
 #signup input[type=email]{
+  max-width: 15em;
   margin: 0;
   background-color: #fff;
   color: black;
+}
+
+#signup input[type=submit]:hover{
+  cursor: pointer;
+  background-color: #FC99A1;
 }

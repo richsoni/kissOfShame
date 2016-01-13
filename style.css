@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: black;
+  font-family: Colefax, sans-serif;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1.0);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+  }
+  to {
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: 1000;
+}
+
+
+#screenshot {
+  background-image: url(/TKOS_medRes.jpg);
+  display: block;
+  height: 50vh;
+  max-width: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#signup {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+
+.hoverDim a {
+  color: #fff;
+  transition: all ease-in-out .7s;
+}
+.hoverDim:hover a {
+  color: #3C3C3C;
+}
+.hoverDim a:hover {
+  border-color: white;
+  color: white;
+}
+
+.hoverFade i{
+  transition: all ease-in-out .7s;
+}
+
+.hoverFade:hover .inactive .fa-inverse{
+  color: #bebebe !important;
+}
+
+#socialNav {
+  width: 100%;
+  padding: 1em 0;
+  text-align: center;
+}
+
+#socialNav a{
+  margin: 0 .2em;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#signup {
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+}
+
+#signup input{
+  font-size: 1.3em;
+  border: none;
+  padding: .8em;
+  width:100%;
+  background-color: #1D1C1C;
+  color: white;
+  outline-color: #FC99A1;
+  border: 1px solid black;
+}
+
+#signup input[type=email]{
+  margin: 0;
+  background-color: #fff;
+  color: black;
+}

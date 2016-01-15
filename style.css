@@ -27,6 +27,7 @@ body {
 
 #screenshot {
   background-image: url(/TKOS_medRes.jpg);
+  z-index: 1;
   display: block;
   height: 50vh;
   max-width: 100%;

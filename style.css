@@ -1,3 +1,21 @@
+/* #screenshot { */
+/*   background-image: url(/TKOS_medRes.jpg); */
+/*   z-index: 1; */
+/*   display: block; */
+/*   height: 50vh; */
+/*   max-width: 100%; */
+/*   background-position: top center; */
+/*   background-repeat: no-repeat; */
+/*   background-size: contain; */
+/* } */
+
+#video {
+  width: 150%;
+  margin-left: -25%;
+  height:150%;
+  margin-top: -23%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -6,35 +24,6 @@ body {
   font-family: Colefax, sans-serif;
 }
 
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale(1.0);
-  }
-  50% {
-    -webkit-transform: scale(1.03);
-  }
-  to {
-    -webkit-transform: scale(1.0);
-  }
-}
-
-.pulse {
-  -webkit-animation-name: pulse;
-  -webkit-animation-duration: 25s;
-  -webkit-animation-iteration-count: 1000;
-}
-
-
-#screenshot {
-  background-image: url(/TKOS_medRes.jpg);
-  z-index: 1;
-  display: block;
-  height: 50vh;
-  max-width: 100%;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .hoverDim a {
   color: #fff;
   transition: all ease-in-out .7s;
@@ -73,7 +62,9 @@ body {
   width: 65vh;
   text-align: center;
   margin: auto auto;
-  margin-top: 3em;
+  position: fixed;
+  bottom: 10em;
+  width: 100%;
 }
 
 #signup input{
@@ -91,11 +82,47 @@ body {
 #signup input[type=email]{
   max-width: 15em;
   margin: 0;
-  background-color: #fff;
-  color: black;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+#signup input[type=submit]{
+  background-color: #000;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
 }
 
 #signup input[type=submit]:hover{
-  cursor: pointer;
-  background-color: #FC99A1;
+  opacity 1;
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+
+*::-webkit-input-placeholder {
+    color: white;
+}
+*:-moz-placeholder {
+    color: white;
+}
+*::-moz-placeholder {
+    color: white;
+}
+*:-ms-input-placeholder {
+    color: white;
+}
+
+@media all and (min-width: 500px) {
+  #signup input[type=submit]{
+    width: 8em;
+  }
+  #signup {
+    bottom: 20em;
+  }
 }

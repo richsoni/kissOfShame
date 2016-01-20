@@ -9,11 +9,23 @@
 /*   background-size: contain; */
 /* } */
 
+#logo {
+  background: url(./IMG_1538.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto auto;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 4em;
+}
 #video {
   width: 150%;
   margin-left: -25%;
   height:150%;
   margin-top: -23%;
+  display: none;
 }
 
 body {
@@ -60,7 +72,7 @@ body {
 
 #signup {
   position: fixed;
-  bottom: 10em;
+  bottom: 1em;
   width: 100%;
 }
 
@@ -125,5 +137,16 @@ body {
 
   #socialNav a:last-child{
     margin-right: 1em;
+  }
+
+  #video {
+    display: block;
+  }
+
+  #logo {
+    width: 410px;
+    height: 447px;
+    opacity: .7;
+    margin-bottom: 2em;
   }
 }
